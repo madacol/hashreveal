@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash Reveal</title>
+    <script src="index.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hash Reveal</h1>
+        
+        <div class="input-group">
+            <label for="hashAlgoInput">Hash Algorithm</label>
+            <select id="hashAlgoInput">
+                <option value="SHA-1" disabled>SHA-1</option>
+                <option value="SHA-256" selected>SHA-256</option>
+                <option value="SHA-384">SHA-384</option>
+                <option value="SHA-512">SHA-512</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="hashInput">Expected Hash</label>
+            <input type="text" id="hashInput" placeholder="Enter hash value to verify">
+        </div>
+
+        <div class="input-group">
+            <label for="contentInput">Content</label>
+            <textarea id="contentInput" rows="4" placeholder="Enter content to hash"></textarea>
+        </div>
+
+        <div class="output">
+            <div class="result-item">
+                <span class="result-label">Algorithm:</span>
+                <span class="result-value" id="hashType">N/A</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Expected Hash:</span>
+                <span class="result-value" id="hashValue">N/A</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Calculated Hash:</span>
+                <span class="result-value" id="calculatedHash">N/A</span>
+            </div>
+            <div id="verificationStatus" class="status neutral">Not verified</div>
+        </div>
+    </div>
+</body>
+</html>

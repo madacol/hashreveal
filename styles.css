@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    text-align: center;
+}
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+}
+.input-group {
+    margin-bottom: 1.5rem;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 500;
+}
+select, input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: white;
+}
+select:focus, input:focus, textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+.output {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+}
+.result-item:last-child {
+    border-bottom: none;
+}
+.result-label {
+    color: #666;
+    font-weight: 500;
+}
+.result-value {
+    font-family: monospace;
+    color: #2c3e50;
+    word-break: break-all;
+}
+.status {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+.status.valid {
+    background-color: #dff6dd;
+    color: #0e7c3f;
+}
+.status.invalid {
+    background-color: #fde7e9;
+    color: #d13438;
+}
+.status.neutral {
+    background-color: #f3f4f6;
+    color: #666;
+}
